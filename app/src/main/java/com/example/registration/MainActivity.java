@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         bundle = getIntent().getExtras();
-         userNombre.setText(bundle.getString("email"));
+        userNombre.setText(bundle.getString("email"));
 
 
 

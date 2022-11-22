@@ -1,9 +1,11 @@
 package com.example.registration;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseUser;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
@@ -28,9 +30,12 @@ public class MapboxActivity2 extends AppCompatActivity {
             public void onMapReady(MapboxMap mapboxMap) {}
         });
     }
+
+
     @Override
     protected void onStart() {
         super.onStart();
         mapView.onStart();
     }
+
 }
