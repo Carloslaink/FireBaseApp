@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageView btnGoMap;
     private Bundle bundle;
 
+
+    /////////// IMPLEMENTS SQL  ////////////////////7
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btnGoMap = findViewById(R.id.btnmap);
 
 
-
+        ////Bundle instance
         bundle = getIntent().getExtras();
         userNombre.setText(bundle.getString("email"));
 

@@ -18,7 +18,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btnLogout14"
+                android:id="@+id/btnverdirec"
                 android:layout_width="135dp"
                 android:layout_height="67dp"
                 android:layout_marginBottom="4dp"
@@ -29,24 +29,24 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 mapbox:layout_constraintBottom_toBottomOf="parent"
-                mapbox:layout_constraintEnd_toStartOf="@+id/btnLogout15"
+                mapbox:layout_constraintEnd_toStartOf="@+id/btnaggdirec"
                 mapbox:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/btnLogout15"
+                android:id="@+id/btnaggdirec"
                 android:layout_width="145dp"
                 android:layout_height="67dp"
                 android:layout_marginBottom="4dp"
                 android:background="@drawable/btn_logout2"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:text="Mejores sitios"
+                android:text="nueva direccion"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 mapbox:layout_constraintBottom_toBottomOf="parent"
                 mapbox:layout_constraintEnd_toStartOf="@+id/btnLogout16"
                 mapbox:layout_constraintHorizontal_bias="0.666"
-                mapbox:layout_constraintStart_toEndOf="@+id/btnLogout14" />
+                mapbox:layout_constraintStart_toEndOf="@+id/btnverdirec" />
 
             <Button
                 android:id="@+id/btnLogout16"
@@ -61,13 +61,13 @@
                 android:textColor="@color/colorWhite"
                 mapbox:layout_constraintBottom_toBottomOf="parent"
                 mapbox:layout_constraintEnd_toEndOf="parent"
-                mapbox:layout_constraintStart_toEndOf="@+id/btnLogout15" />
+                mapbox:layout_constraintStart_toEndOf="@+id/btnaggdirec" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_Track"
                 android:layout_width="65dp"
                 android:layout_height="61dp"
-                android:layout_marginStart="330dp"
+                android:layout_marginStart="290dp"
                 android:layout_marginTop="510dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="60dp"
@@ -79,6 +79,24 @@
                 mapbox:layout_constraintStart_toStartOf="parent"
                 mapbox:layout_constraintTop_toTopOf="parent"
                 mapbox:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="255dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="78dp"
+                android:layout_marginBottom="487dp"
+                android:background="@drawable/findubi"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Busqueda"
+                android:textAlignment="center"
+                mapbox:layout_constraintBottom_toTopOf="@+id/btn_Track"
+                mapbox:layout_constraintEnd_toEndOf="parent"
+                mapbox:layout_constraintStart_toStartOf="parent"
+                mapbox:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.mapbox.mapboxsdk.maps.MapView>
